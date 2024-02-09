@@ -1,0 +1,114 @@
+Eingabe im Startmenu  (selectMapLoop()):
+
+    Eingaben:
+
+        asldkfj -> "Falsche Eingabe. Bitte Nummer eingeben
+                   Ungültige Auswahl. Bitte wählen Sie eine gültige Kartennummer."
+
+        1203948102934802934802398 -> "Zahl ist zu groß
+                                     Ungültige Auswahl. Bitte wählen Sie eine gültige Kartennummer."
+
+        1 -> Karte 1 wird gewählt (falls vorhanden)
+
+Hochladen der Karten (LoadMaps()):
+
+    .txt Dateien im Ordner -> true
+    keine .txt Dateiein im Ordner -> false
+
+Überprüfung der Karte (CheckMap()):
+
+    testmap1.txt:
+        -> "Die hochgeladene Karte ist ungültig"
+        wegen isLadderValid() ist false
+
+    testmap2.txt:
+        -> "falsche ebene: 6x30
+            Die hochgeladene Karte ist ungültig"
+        wegen isPlatformValid() ist false
+
+    testmap3.txt:
+        -> "Breite/Höhe muss größer als 0 sein"
+        wegen setDimension()
+
+    leere Datei/.txt Datei, die keine Karte ist -> "Die hochgeladene Karte ist ungültig"
+
+    spiel.txt:
+        -> Die Karte wird im Terminal ausgegeben.
+
+
+Steuerung:
+D - rechts, A - links, F zu klettern. E zum Beenden
+
+    deathFall():
+                                    O
+                    P
+            ---------   -------- -------
+                H                 H
+                H                 H
+                H                 H
+                H            ------------
+             --------         H
+                   H          H
+                   H          H
+                   H          H
+                  ----------------
+
+            D -> "GAME OVER", da Spieler mehr als 5 Zellen fällt
+
+                                    O
+
+            ---------   -------- -------
+                H                 H
+                H                 H
+                H                 H
+                H   P        ------------
+             --------         H
+                   H          H
+                   H          H
+                   H          H
+                  ---x------------
+
+           D -> Speler landet auf x
+
+    climb()
+
+                                    O
+                P
+            ---------   -------- -------
+                H                 H
+                H                 H
+                H                 H
+                x            ------------
+             --------         H
+                   H          H
+                   H          H
+                   H          H
+                  ----------------
+
+            F -> Spieler geht bis zum ende des Leiters (x)
+
+                                    O
+               P
+            ---------   -------- -------
+                H                 H
+                H                 H
+                H                 H
+                H            ------------
+             --------         H
+                   H          H
+                   H          H
+                   H          H
+                  ----------------
+
+            F -> Spieler bleibt stehen
+
+    move():
+        wenn x-position = 0 und Eingabe = A -> wird nicht ausgeführt
+        wenn x-position != 0 und Eingabe = A -> x--
+
+        wenn x = width und Eingabe = D -> wird nicht ausgeführt
+        wenn x + 1 != width und Eingabe = D -> x++
+
+    processInput():
+        wenn input = A oder D oder F oder E -> wird ausgeführt
+        wenn nicht -> return false by default
