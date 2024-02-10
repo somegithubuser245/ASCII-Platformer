@@ -4,3 +4,4 @@ To create your own Maps, upload them in /maps/ Folder.
 The Rules are:
 Ladders should not end in empty space.
 There should be enogh Space between Platforms for Player (MAX_SPACE)
+There should be Start position (S) and end position (O)
