@@ -1,8 +1,8 @@
 # Simple ASCII Platformer
-## Simple game, Player needs to reach to symbol 'O' to win.
+## Simple game, Player needs to reach to symbol 'O' to win
 ### How to start?
   - Compile the game using txt/COMPILE.txt
-  - You will be land on the start screen with preinstalled maps
+  - You will land on the start screen with preinstalled maps
   - Choose one and start Playing!
 
 ### Controls
@@ -17,6 +17,7 @@
  - Ladders should not end in empty space.
  - There should be enogh Space between Platforms for Player (MAX_SPACE, 3 by default)
  - There should be Start position (S) and end position (O)
+Your map will be checked by the programm and warn you if something's wrong with uploaded map
 ### Example of the map.txt file:
 
 ```
