@@ -1,6 +1,9 @@
-# 2dPlatformer
+# Simple ASCII Platformer
 ## Simple game, Player needs to reach to symbol 'O' to win.
 ### How to start?
+  - Compile the game using txt/COMPILE.txt
+  - You will be land on the start screen with preinstalled maps
+  - Choose one and start Playing!
 
 ### Controls
   - Use A and D and press Enter to move Right/Left
