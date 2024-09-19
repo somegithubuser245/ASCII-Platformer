@@ -5,3 +5,18 @@ The Rules are:
 Ladders should not end in empty space.
 There should be enogh Space between Platforms for Player (MAX_SPACE)
 There should be Start position (S) and end position (O)
+### Example:
+15 30
+                           
+ S                       O  
+                            
+---------   -------- ------- 
+    H                 H     
+    H                 H     
+    H                 H     
+    H            ------------
+ --------         H         
+       H          H         
+       H          H         
+       H          H          
+      ----------------      
