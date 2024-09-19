@@ -1,6 +1,12 @@
 # 2dPlatformer
-Simple game, Player needs to reach to symbol 'O' to win.
-To create your own Maps, upload them in /maps/ Folder.
+## Simple game, Player needs to reach to symbol 'O' to win.
+### How to start?
+
+### Controls
+  - Use A and D and press Enter to move Right/Left
+  - Use F and press Enter to climb the ladder
+  - E to exit the game
+  - To create your own Maps, upload them in /maps/ Folder
 
 ### The Rules for your own map are as follows:
  - Y and X at the start of the map.txt file
