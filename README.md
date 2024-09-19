@@ -16,7 +16,7 @@
  - Y - height, X - width
  - Ladders should not end in empty space.
  - There should be enogh Space between Platforms for Player (MAX_SPACE, 3 by default)
- - There should be Start position (S) and end position (O)
+ - There should be Start position (S) and end position (O), 2 cells above the ground
 
 Your map will be checked by the programm and warn you if something's wrong with uploaded map
 ### Example of the map.txt file:
