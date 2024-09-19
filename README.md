@@ -8,7 +8,6 @@ To create your own Maps, upload them in /maps/ Folder.
  - Ladders should not end in empty space.
  - There should be enogh Space between Platforms for Player (MAX_SPACE, 3 by default)
  - There should be Start position (S) and end position (O)
- - 
 ### Example of the map.txt file:
 
 ```
